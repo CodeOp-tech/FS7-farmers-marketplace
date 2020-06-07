@@ -30,9 +30,3 @@ An online marketplace for farmers' markets.
 
 - Run `npm start` in project directory to start the Express server on port 5000
 - `cd client` and run `npm start` to start client server in development mode with hot reloading in port 3000.
-
-### Design
-
-- Materialize: `npm install --save materialize-css@next`
-- MDBootstrap: `npm install mdbootstrap`
-- React Router: `npm install react-router-dom`
