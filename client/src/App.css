@@ -1,1 +1,208 @@
+/*
+blue: #9dbca6
+beige: #e3c080
+orange: #fd7336
+cherry: #b12737
+raisin: #50424b
+*/
 
+/* COLOR CARD */
+.blue {
+  color: #9dbca6;
+}
+
+.orange {
+  color: #fd7336;
+}
+
+.beige {
+  color: #e3c080;
+}
+
+/* HOME PAGE */
+.homeTitle {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+}
+
+.buy {
+  background: #9dbca6;
+  background-image: "images/OnlineShop";
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.markets {
+  background: #e3c080;
+  background-image: "images/Markets";
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.recipe {
+  background: #fd7336;
+  background-image: "images/Recipe";
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suppliers {
+  background: #b12737;
+  background-image: "images/Suppliers";
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  height: 80px;
+  border-bottom: solid #b12737 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Abril Fatface", cursive;
+  font-family: "Barlow Condensed", sans-serif;
+  font-family: "Bebas Neue", cursive;
+  padding: 20px;
+}
+
+.navBarButton {
+  width: 5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  position: fixed; /* Stay in place */
+  background-color: black; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: lightgray;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #fd7336;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/* SOCIAL MEDIA BUTTONS */
+.fa-facebook {
+  background: white;
+  color: #3b5998;
+  font-size: 35px;
+  width: 30px;
+  height: 30px;
+}
+
+.fa-twitter {
+  background: white;
+  color: #007bb5;
+  font-size: 35px;
+  width: 30px;
+  height: 30px;
+}
+.fa-whatsapp {
+  background-color: white;
+  color: #25d366;
+  font-size: 35px;
+  width: 30px;
+  height: 30px;
+}
+
+.fa-instagram {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  color: #fff;
+  font-size: 35px;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  padding: 1px;
+  margin: 5px 2px;
+}
+
+.buyersCard {
+  padding: 10px;
+  margin: 5px;
+  display: block;
+  border: solid #9dbca6 2px;
+  background: transparent;
+}
+
+.button {
+  font-size: 14px;
+  padding: 6px 12px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #9dbca6;
+}
+
+.square {
+  width: 300px;
+  height: 300px;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
