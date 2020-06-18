@@ -49,6 +49,8 @@ raisin: #50424b
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .body {

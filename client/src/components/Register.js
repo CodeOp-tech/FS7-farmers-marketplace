@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
-// import { useHistory } from "react-router-dom";
-
 import "./ContactUs.css";
 import apiRegister from "../utils/apiRegister";
 
@@ -10,17 +7,13 @@ export default class SignUp extends Component {
     super(props);
     this.state = {
       users: [],
-      username: "mariarrrr",
-      password: "testing123",
-      firstname: "Mariaaaa",
-      lastname: "Ribot",
-      email: "test@test.co.uk",
+      username: "",
+      password: "",
+      firstname: "",
+      lastname: "",
+      email: "",
     };
   }
-
-  performURL = () => {
-    return <Redirect to="/target" />;
-  };
 
   componentDidMount() {
     this.getUsers();
@@ -43,7 +36,7 @@ export default class SignUp extends Component {
         console.log(response.data);
       });
     this.getUsers();
-    this.performURL();
+    window.location.href = "/";
   };
 
   handleInput = (e) => {

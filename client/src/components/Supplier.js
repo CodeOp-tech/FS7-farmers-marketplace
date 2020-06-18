@@ -51,10 +51,8 @@ export default function Supplier(props) {
             {supplier.website}
           </a>
           <p className="text">
-            {supplier.email} · {supplier.mob_no}
-          </p>
-          <p className="text">
-            {supplier.day} from {supplier.start_time} to {supplier.end_time}
+            {supplier.email} · {supplier.mob_no}{" "}
+            {`(${supplier.firstname} ${supplier.lastname})`}
           </p>
         </div>
       </div>

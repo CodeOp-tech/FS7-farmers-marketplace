@@ -37,13 +37,7 @@ class App extends Component {
     document.getElementById("main").style.marginLeft = "20px";
   };
 
-  setLogin = (username) => {
-    this.setState({
-      login: true,
-    });
-    console.log(this.state.login);
-  };
-
+  // Save the location
   setLocation = (lat, lng) => {
     localStorage.setItem("lat", lat);
     localStorage.setItem("lng", lng);
@@ -52,6 +46,12 @@ class App extends Component {
   onLogin = (username, history) => {
     this.setState({ username });
     history.push("/");
+  };
+
+  setLogin = (username) => {
+    this.setState({
+      login: true,
+    });
   };
 
   logOut = () => {
@@ -73,7 +73,7 @@ class App extends Component {
             <Link to="/products">Products</Link>
             <Link to="/markets">Markets</Link>
             <Link to="/suppliers">Suppliers</Link>
-            <Link to="/recipe">Recipe Of The Week</Link>
+            <Link to="/recipe">Find a recipe</Link>
             <Link to="/contact">Contact</Link>
           </div>
         </div>
@@ -83,7 +83,7 @@ class App extends Component {
           <div className="header">
             <div className="">
               <Link to="/">
-                <h1 className=""> FARMER'S MARKETPLACE</h1>
+                <h1 className="m-0"> FARMER'S MARKETPLACE</h1>
               </Link>
             </div>
 
@@ -92,24 +92,26 @@ class App extends Component {
                 <div>
                   {/* If we have logged in, show the username */}
                   <Link to={"/username"}>
-                    Hi {this.state.username}!
-                    <i className="fas fa-user-circle mx-3 CCblue fa-2x"></i>
+                    <h5 className="d-inline align-middle m-0">
+                      Hi {this.state.username}!
+                    </h5>
+                    <i className="d-inline align-middle fas fa-user-circle mx-3 CCblue fa-2x"></i>
                   </Link>
 
                   {/* Logout */}
                   <span onClick={() => this.logOut()}>
-                    <i className="fas fa-sign-out-alt CCblue fa-2x"></i>
+                    <i className="d-inline align-middle fas fa-sign-out-alt CCblue fa-2x"></i>
                   </span>
                 </div>
               ) : (
                 <div className="row">
                   <Link to={"/register"} className="d-flex align-items-center">
-                    <h5 className="d-inline align-middle">Register</h5>
+                    <h5 className="d-inline align-middle m-0">Register</h5>
                     <i className="fas fa-file-alt mx-3 CCblue fa-2x d-inline align-middle"></i>
                   </Link>
 
                   <Link to={"/login"} className="d-flex align-items-center">
-                    <h5>Login</h5>
+                    <h5 className="d-inline align-middle m-0">Login</h5>
                     <i className="fas fa-sign-in-alt mx-3 CCblue fa-2x"></i>
                   </Link>
                 </div>

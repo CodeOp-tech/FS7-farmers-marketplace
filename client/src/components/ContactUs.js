@@ -87,7 +87,7 @@ export default class ContactUs extends Component {
         <div className="row mt-4">
           <div className="col text-center">
             <i className="fas fa-map-marker-alt mt-4 fa-2x CCbeige"></i>
-            <p className="text">San Francisco, CA 94126, USA</p>
+            <p className="text">Tintagel House, LONDON, SE1 7TY</p>
           </div>
           <div className="col text-center">
             <i className="fas fa-phone mt-4 fa-2x CCbeige"></i>

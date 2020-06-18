@@ -26,7 +26,7 @@ export default class GeoLocator extends Component {
   showPosition = (position) => {
     this.setState({ lat: position.coords.latitude });
     this.setState({ lng: position.coords.longitude });
-    //If lat & lng aren't alreaady set, then set the location
+    // If lat & lng aren't alreaady set, then set the location
     if (!this.props.lat || !this.props.lng) {
       this.props.setLocation(
         position.coords.latitude,
@@ -34,8 +34,6 @@ export default class GeoLocator extends Component {
       );
     }
 
-    // This doesn't work
-    //Yes it does! Erica
     this.setState({ location: { lat: this.state.lat, lng: this.state.lng } });
   };
 

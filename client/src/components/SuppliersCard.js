@@ -18,9 +18,13 @@ export default class SuppliersCard extends Component {
           // start={locationStart}
           // end={locationEnd}
         >
-          <div className="container d-flex justify-content-center my-3">
-            <img src={user.img} alt="Error" className="productImg" />
-          </div>
+          <div
+            className="container d-flex justify-content-center my-3"
+            style={{
+              background: `url(${user.img}) center/cover`,
+              height: "100px",
+            }}
+          ></div>
           <div className="container d-flex justify-content-center mt-3"></div>
           <br />
           Ref. 00{user.id}
@@ -33,7 +37,7 @@ export default class SuppliersCard extends Component {
           <br />
           {user.email && `${user.email}`}
           <br />
-          {user.website && <a href={user.website}>{user.website}</a>}
+          {user.website && <p>{user.website}</p>}
           <br />
           <div className="d-flex justify-content-between mt-3">
             <div className="ml-1 row">

@@ -11,10 +11,10 @@ export default function Market({ start, end }) {
   const [market, setMarket] = useState([]);
   const [name, setSearch] = useState("");
   const { id } = useParams();
-  // const { locationStart } = {
-  //   lat: parseFloat(localStorage.getItem("lat")),
-  //   lng: parseFloat(localStorage.getItem("lng")),
-  // };
+  const [locationStart, setLocationStart] = useState({
+    lat: parseFloat(localStorage.getItem("lat")),
+    lng: parseFloat(localStorage.getItem("lng")),
+  });
 
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -31,6 +31,11 @@ export default function Market({ start, end }) {
       setProducts(response.data);
     });
   };
+
+  useEffect(() => {
+    getProductsFiltered();
+    getOneMarket();
+  }, []);
 
   useEffect(() => {
     getProductsFiltered();
@@ -61,12 +66,13 @@ export default function Market({ start, end }) {
           <p className="text">
             {market.day} from {market.start_time} to {market.end_time}
           </p>
-          <span className="text">
+          <span className="text d-flex align-items-center justify-content-center">
             <i className="fas fa-car-side text fa-1x CCbeige mr-2"></i>
             <strong>Food Miles: </strong>
-            {console.log(start)}
-            {console.log(end)}
-            <FoodMilesNumber start={start} end={end} />
+            <FoodMilesNumber
+              start={locationStart}
+              end={{ lat: market.lat, lng: market.lng }}
+            />
           </span>
         </div>
       </div>

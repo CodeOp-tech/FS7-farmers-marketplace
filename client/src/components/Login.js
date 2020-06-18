@@ -28,9 +28,9 @@ export default class Login extends Component {
     })
       .then((response) => {
         localStorage.setItem("token", response.data.token);
-        console.log(response);
+        // console.log(response);
         this.props.history.push("/");
-        console.log(this.props);
+        // console.log(this.props);
         localStorage.setItem("username", username);
         // console.log(response);
         this.props.onLogin(username, this.props.history);

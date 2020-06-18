@@ -37,14 +37,11 @@ export default function ProductsCard(props) {
         <p>{`Seller: ${props.product.company_name}`}</p>
         {props.product.unit_price.toFixed(2) + " £"}
         <br />
-        <div className="d-flex justify-content-between mt-3">
-          <div className="ml-1 row">
-            <i className="fas fa-car-side fa-2x CCbeige mr-2"></i>{" "}
-            <strong>Food Miles: </strong>
-            <FoodMilesNumber start={locationStart} end={locationEnd} />
-          </div>
-          <i className="fas fa-cart-plus mx-3 CCcherry fa-2x"></i>
-        </div>
+        <span className="text text-muted d-flex align-items-center">
+          <i className="fas fa-car-side text fa-1x CCbeige mr-2"></i>
+          <strong>Food Miles: </strong>
+          <FoodMilesNumber start={locationStart} end={locationEnd} />
+        </span>
       </Link>
     </div>
   );

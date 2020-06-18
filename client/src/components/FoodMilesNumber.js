@@ -6,8 +6,8 @@ class FoodMilesNumber extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      start: this.props.start,
-      end: this.props.end,
+      start: props.start,
+      end: props.end,
       distance: "",
     };
   }
@@ -18,8 +18,15 @@ class FoodMilesNumber extends Component {
     );
     this.search();
   }
+  componentDidUpdate(prevProps, prevState) {
+    if (
+      prevProps.start !== this.props.start ||
+      prevProps.end !== this.props.end
+    )
+      this.search();
+  }
   search = () => {
-    const { start, end } = this.state;
+    const { start, end } = this.props;
     d_service.getDistanceMatrix(
       {
         origins: [start],
@@ -27,6 +34,11 @@ class FoodMilesNumber extends Component {
         travelMode: "DRIVING",
       },
       (elements) => {
+        // console.log("elements", {
+        //   origins: [start],
+        //   destinations: [end],
+        //   travelMode: "DRIVING",
+        // });
         //here is where we can set the value of the foodmiles component
         this.setState({
           distance: elements?.rows[0]?.elements[0]?.distance?.text,

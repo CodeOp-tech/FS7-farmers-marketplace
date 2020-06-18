@@ -51,7 +51,7 @@ export default class Home extends Component {
             onMouseOver={(e) => this.changeOpacityUp(e)}
             onMouseLeave={(e) => this.changeOpacityDown(e)}
           >
-            <Link to="/recipe">RECIPE OF THE DAY</Link>
+            <Link to="/recipe">FIND YOUR RECIPES</Link>
           </div>
         </div>
       </div>
