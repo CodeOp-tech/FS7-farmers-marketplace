@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../App.css";
+import "./ContactUs.css";
 
 // https://mdbootstrap.com/docs/jquery/forms/contact/
 
@@ -7,21 +8,20 @@ export default class ContactUs extends Component {
   render() {
     return (
       <div className="container">
-        <h2 className="h1-responsive font-weight-bold text-center my-4">
-          CONTACT US
-        </h2>
-        <p className="text-center w-responsive mx-auto mb-5" />
-        Do you have any questions? Please do not hesitate to contact us
-        directly. Our team will come back to you within
-        <div className="container d-flex justify-content-center my-3" />
         <div className="row">
-          <div className="col mb-md-0 mb-5">
-            <div
-              id="contact-form"
-              name="contact-form"
-              //   action="mail.php"
-              //   method="POST"
-            >
+          <div>
+            <i className="fas fa-envelope CCbeige fa-2x"></i>
+            <h5 className="title">CONTACT US </h5>
+            <h5 className="subtitle">Do you have any questions? </h5>
+            <p className="text my-2">
+              Please do not hesitate to contact us directly. Our team will come
+              back to you within
+            </p>
+          </div>
+        </div>
+        <div className="text-center borderCard p-5 my-3" action="#!">
+          <div className="row">
+            <div className="col mb-md-0 mb-5">
               <div className="row">
                 <div className="col">
                   <div className="md-form mb-0">
@@ -36,7 +36,6 @@ export default class ContactUs extends Component {
                 </div>
                 <div className="col">
                   <div className="md-form mb-0">
-                    {" "}
                     <input
                       type="text"
                       id="email"
@@ -74,35 +73,30 @@ export default class ContactUs extends Component {
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="d-flex justify-content-center">
-              <button
-                className="button"
-                // onClick="document.getElementById('contact-form').submit();"
-              >
-                Send
-              </button>
+              <div className="d-flex justify-content-center">
+                <button className="button">Send</button>
+              </div>
+              {/* <div className="status"></div> */}
             </div>
-            {/* <div className="status"></div> */}
           </div>
         </div>
-        <div className="d-flex justify-content-center  my-5">
+        {/* <div className="d-flex justify-content-center  my-5">
           <div className="square">GOOGLE MAP HERE</div>
-        </div>
+        </div> */}
         <div className="row mt-4">
           <div className="col text-center">
-            <i className="fas fa-map-marker-alt mt-4 fa-2x beige"></i>
-            <p>San Francisco, CA 94126, USA</p>
+            <i className="fas fa-map-marker-alt mt-4 fa-2x CCbeige"></i>
+            <p className="text">Tintagel House, LONDON, SE1 7TY</p>
           </div>
           <div className="col text-center">
-            <i className="fas fa-phone mt-4 fa-2x beige"></i>
-            <p>+ 01 234 567 89</p>
+            <i className="fas fa-phone mt-4 fa-2x CCbeige"></i>
+            <p className="text">+44 1632 960230</p>
           </div>
 
           <div className="col text-center">
-            <i className="fas fa-envelope mt-4 fa-2x beige"></i>
-            <p>contact@mdbootstrap.com</p>
+            <i className="fas fa-envelope mt-4 fa-2x CCbeige"></i>
+            <p className="text">info@farmersmarketplace.com</p>
           </div>
         </div>
       </div>

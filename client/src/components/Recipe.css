@@ -1,0 +1,12 @@
+.recipeSearch {
+  padding: 20px;
+  margin: 5px;
+  border: solid #9dbca6 2px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.recipeCard label {
+  color: black !important;
+}

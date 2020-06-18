@@ -8,13 +8,15 @@ export default class Counter extends Component {
     this.state = { quantity: 0 };
   }
 
+  handleInput = (e) => {
+    this.setState({ quantity: e.target.value });
+  };
+
   increase = () => {
-    //only if the count is less than the max
     this.setState({ quantity: this.state.quantity + 1 });
   };
 
   decrease = (e) => {
-    //only if the count is more than the min
     if (this.state.quantity > 0) {
       this.setState({ quantity: this.state.quantity - 1 });
     }
@@ -32,6 +34,7 @@ export default class Counter extends Component {
             name="quantity"
             value={quantity}
             type="number"
+            onChange={(e) => this.handleInput(e)}
           />
           <button className="plus" onClick={this.increase} />
         </div>

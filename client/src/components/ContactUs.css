@@ -1,0 +1,17 @@
+.button {
+  font-size: 16px;
+  padding: 6px 12px;
+  margin-top: 10px;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 1px solid transparent;
+  color: white;
+  background-color: #9dbca6;
+}
+
+.borderCard {
+  border: solid white 2px;
+  box-shadow: 0px 5px 20px #9dbca6;
+  border-radius: 10px;
+}

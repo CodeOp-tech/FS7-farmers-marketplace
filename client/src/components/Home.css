@@ -1,0 +1,70 @@
+/* HOME PAGE */
+.homeTitle {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+.homeTitle a {
+  color: white !important;
+}
+.support {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.buy {
+  background-image: url("/images/OnlineShop.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+}
+
+.markets {
+  background-image: url("/images/Markets.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+}
+.recipe {
+  background-image: url("/images/Recipe.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+}
+.suppliers {
+  background-image: url("/images/Suppliers.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 60%;
+}

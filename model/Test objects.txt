@@ -1,0 +1,32 @@
+test_obj_products
+{
+    "name": "Carrots",
+    "unit_price": "1.2",
+    "units": "EUR",
+    "description": "long, orange and extremely carroty" ,
+    "tax_code": "1",
+    "seller_id": "5",
+    "isPerishable": "0",
+    "shelf_life_count": "2",
+    "shelf_life_units":"weeks"
+  }
+  
+  test_obj_markets
+  {
+      "name": "My Market",
+      "email": "test@test.co.uk",
+      "address1": "Picadilly",
+      "postcode": "W1",
+      "city": "London",
+      "location": "",
+      "company_name": "St. James, Picadilly",
+      "company_no": "",
+      "tel_no": "020 7777 7777",
+      "mob_no": "0777 777 7777",
+      "day": "Wednesday",
+      "start_time": "09:00",
+      "end_time": "15:00",
+      "website": "www.stjamespicadilly.org",
+  } 
+  
+  
