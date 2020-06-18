@@ -59,9 +59,11 @@ export default function ProductsCard(props) {
             <p>{`Description: ${product.description}`}</p>
             <div className="row d-flex justify-content-between mt-3">
               <div className="col-md-6">
-                <i className="fas fa-car-side fa-2x CCblue mr-2"></i>
-                <strong>Food Miles: </strong>
-                <FoodMilesNumber start={locationStart} end={locationEnd} />
+                <span className="text d-flex align-items-center">
+                  <i className="fas fa-car-side fa-2x CCblue mr-2"></i>
+                  <strong>Food Miles: </strong>
+                  <FoodMilesNumber start={locationStart} end={locationEnd} />
+                </span>
               </div>
               <div className="col-md-4 d-flex justify-content-center">
                 <InputNumber />
