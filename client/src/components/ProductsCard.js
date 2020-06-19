@@ -23,9 +23,13 @@ export default function ProductsCard(props) {
         start={locationStart}
         end={locationEnd}
       >
-        <div className="container d-flex justify-content-center my-3">
-          <img src={props.product.img} alt="Error" className="productImg" />
-        </div>
+        <div
+          className="container d-flex justify-content-center my-1"
+          style={{
+            background: `url(${props.product.img}) center/cover`,
+            height: "200px",
+          }}
+        ></div>
         <div className="container d-flex justify-content-center mt-3">
           <InputNumber />
         </div>

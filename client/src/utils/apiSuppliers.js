@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiRoot = "/suppliers";
+const apiRoot = "/api/suppliers";
 
 export default {
   // GET one supplier

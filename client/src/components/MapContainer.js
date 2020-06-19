@@ -4,7 +4,8 @@ import { Map, Marker, InfoWindow, GoogleApiWrapper } from "google-maps-react";
 import api from "../utils/apiMarkets";
 import FoodMilesNumber from "./FoodMilesNumber";
 
-const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+// const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+const apiKey = "AIzaSyD9qAIYJOoKf0haJPiuo1FbM3ec8_hiINY";
 
 let myBounds;
 export class MapContainer extends Component {

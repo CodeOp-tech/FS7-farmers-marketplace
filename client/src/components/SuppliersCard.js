@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import "./SupplierCard.css";
 
 export default class SuppliersCard extends Component {
   constructor(props) {
@@ -11,15 +12,10 @@ export default class SuppliersCard extends Component {
     const { user } = this.props;
 
     return (
-      <div className="productCard">
-        <Link
-          to={`/suppliers/${user.id}`}
-          product={user}
-          // start={locationStart}
-          // end={locationEnd}
-        >
+      <div className="supplierCard">
+        <Link to={`/suppliers/${user.id}`} product={user}>
           <div
-            className="container d-flex justify-content-center my-3"
+            className="container d-flex justify-content-center my-1"
             style={{
               background: `url(${user.img}) center/cover`,
               height: "100px",
@@ -38,15 +34,6 @@ export default class SuppliersCard extends Component {
           {user.email && `${user.email}`}
           <br />
           {user.website && <p>{user.website}</p>}
-          <br />
-          <div className="d-flex justify-content-between mt-3">
-            <div className="ml-1 row">
-              <i className="fas fa-car-side fa-2x CCbeige mr-2"></i>{" "}
-              <strong>Food Miles: </strong>
-              {/* <FoodMilesNumber start={locationStart} end={locationEnd} /> */}
-            </div>
-            <i className="fas fa-cart-plus mx-3 CCcherry fa-2x"></i>
-          </div>
         </Link>
       </div>
     );

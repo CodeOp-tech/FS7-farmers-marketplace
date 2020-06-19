@@ -1,0 +1,15 @@
+.supplierCard {
+  padding: 10px;
+  height: 330px;
+  margin: 5px;
+  display: block;
+  width: 250px;
+  border: solid #9dbca6 2px;
+  background: transparent;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.supplierCard a {
+  color: black !important;
+}

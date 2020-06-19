@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiRoot = "/users";
+const apiRoot = "/api/users";
 
 export default {
   // POST request for new user

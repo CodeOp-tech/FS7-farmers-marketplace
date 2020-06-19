@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { GoogleApiWrapper } from "google-maps-react";
 
-const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+// const apiKey = process.env.REACT_APP_GOOGLE_API_KEY;
+const apiKey = "AIzaSyD9qAIYJOoKf0haJPiuo1FbM3ec8_hiINY";
 
 let g_service = null;
 

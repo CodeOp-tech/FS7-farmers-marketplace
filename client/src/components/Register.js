@@ -36,7 +36,7 @@ export default class SignUp extends Component {
         console.log(response.data);
       });
     this.getUsers();
-    window.location.href = "/";
+    window.location.href = "/login";
   };
 
   handleInput = (e) => {

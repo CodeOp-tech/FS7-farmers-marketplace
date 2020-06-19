@@ -58,6 +58,7 @@ class App extends Component {
     localStorage.removeItem("username");
     localStorage.removeItem("token");
     this.setState({ username: "" });
+    // history.push("/");
   };
 
   render() {

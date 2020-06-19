@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiRoot = "/products";
+const apiRoot = "/api/products";
 
 export default {
   // GET all the products
